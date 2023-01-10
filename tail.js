@@ -5,8 +5,8 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑Assertion Failed: ${actual}  !==   ${expected}`);
   }
 };
-function tail(array) {
-  const result =[];
+const tail = function(array) {
+  const result = [];
   const length = array.length;
 
   for (let index = 1; index < length; index++) {
@@ -14,16 +14,16 @@ function tail(array) {
   }
   
   return result;
-}
-const test1 = tail([1, 2, 3]); 
+};
+const test1 = tail([1, 2, 3]);
 assertEqual(test1, [1, 2, 3]);
-console.log(test1)
+console.log(test1);
 
-const test2 = tail(["Hello", "Lighthouse", "Labs"]); 
+const test2 = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(test2, ["Lighthouse", "Labs"]);
 console.log(test2);
 
-// Test Case: Check the original array 
+// Test Case: Check the original array
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 tail(words); // no need to capture the return value since we are not checking it
 assertEqual(words.length, 3); // original array should still have 3 elements!
