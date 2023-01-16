@@ -16,8 +16,8 @@ const eqObjects = function (object1, object2) {
         if (object2[key] !== object1[key]) {
           return false;
         } 
-        } else {
-          return false;
+      } else {
+        return false;
       }
     } 
   } else {

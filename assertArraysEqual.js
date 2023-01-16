@@ -18,4 +18,3 @@ const assertArraysEqual = function(actual, expected) {
     console.log(`🛑🛑🛑Assertion Failed: ${actual}  !==   ${expected}`);
   }
 };
-// Implement assertArraysEqual which will take in two arrays and console.log an appropriate message to the console.
