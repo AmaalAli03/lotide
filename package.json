@@ -1,8 +1,8 @@
 {
   "name": "@amaalali03/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "Light House Labs first project : Lotide, and replicating it manually like how lodash would",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,10 +13,10 @@
     "type": "git",
     "url": "git+https://github.com/AmaalAli03/lotide.git"
   },
-  "author": "",
+  "author": "Amaal Ali",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AmaalAli03/lotide/issues"
+    "url": "git@github.com:AmaalAli03/lotide.git"
   },
   "homepage": "https://github.com/AmaalAli03/lotide#readme",
   "devDependencies": {

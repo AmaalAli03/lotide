@@ -26,9 +26,7 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `function1(...)`: description
-* `function2(...)`: description
-* `function3(...)`: description
+
 `assertArraysEqual()`: it should be an alternating test for when you are asserting if the arrays are equal or if the arrays are not equal. 
 `assertEqual()`: it should compare the two values it takes in and prints out a message telling us if they match or not.
 `eqArrays()`: this will take in two arrays and returns true or false, based on a perfect match. 

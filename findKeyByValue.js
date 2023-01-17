@@ -1,4 +1,4 @@
-const assertEqual = require('../assertEqual');
+const assertEqual = require('./assertEqual');
 
 const bestTVShowsByGenre = { 
   sci_fi: "The Expanse",
