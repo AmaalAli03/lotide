@@ -1,12 +1,7 @@
+const assertEqual = require('./assertEqual');
+
 const string = "My name is Amaal Ali";
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅Assertion Passed: ${actual}  ===  ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑Assertion Failed: ${actual}  !==   ${expected}`);
-  }
-};
 const countLetters = function(string) {
   const result = {};
   const removeSpace = string.split(" ").join("");
@@ -19,4 +14,5 @@ const countLetters = function(string) {
   }
 return result
   }
-  console.log(countLetters(string));
+  // console.log(countLetters(string));
+  module.exports = countLetters;

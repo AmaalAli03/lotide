@@ -1,10 +1,5 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅Assertion Passed: ${actual}  ===  ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑Assertion Failed: ${actual}  !==   ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
+
 const eqObjects = function (object1, object2) {
   // checking the length of our objects
   if (Object.keys(object1).length === Object.keys(object2).length) {
@@ -26,9 +21,11 @@ const eqObjects = function (object1, object2) {
   return true;
 };
 
-const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject = { size: "medium", color: "red" };
-console.log(eqObjects(shirtObject, anotherShirtObject)); // => true
+// const shirtObject = { color: "red", size: "medium" };
+// const anotherShirtObject = { size: "medium", color: "red" };
+// console.log(eqObjects(shirtObject, anotherShirtObject)); // => true
 
-const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-console.log(eqObjects(shirtObject, longSleeveShirtObject)); // => false
+// const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
+// console.log(eqObjects(shirtObject, longSleeveShirtObject)); // => false
+
+module.exports = eqObjects;
